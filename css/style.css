@@ -1,0 +1,495 @@
+.conteiner {
+	font-family: PT-Sans, Arial, sans-serif;
+	width: 325px;
+	margin: 0 auto;
+	border: 1px solid #67e68a;
+	border-radius: 10px;
+	background-color: #f9f7f8;
+	padding-bottom: 20px;
+	position: relative;
+	overflow: hedden;
+}
+
+.conteiner .header {
+	width: 325px;
+	background-color: #67e68a;
+	height: 50px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom: 1px solid green;
+	padding: 10px 0px 10px 0px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}	
+
+#sort-tasks-button {
+	border: 1px solid #67e68a;
+	border-radius: 5px;
+	background-color: #fff;
+	padding: 3px 6px;
+	position: absolute;
+	font-size: 12px;
+	line-height: 16px;
+	top: 59px;
+	right: 12px;
+	outline: none;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s; 
+	color: #888;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 60px;
+	text-align: center;
+}
+
+#sort-tasks-button:hover {
+	color: #000;
+	top: 58px;
+	cursor: pointer;
+	box-shadow:  0px 0px 3px 1px rgba(91,86,86,.4);
+	-webkit-box-shadow: 0px 0px 3px 1px rgba(91,86,86,.4);
+	-moz-box-shadow:  0px 0px 3px 1px rgba(91,86,86,.4);
+}
+
+#sort-tasks-button:active {
+	box-shadow: inset  0px 0px 3px 1px rgba(91,86,86,.4);
+	-webkit-box-shadow: inset 0px 0px 3px 1px rgba(91,86,86,.4);
+	-moz-box-shadow inset:  0px 0px 3px 1px rgba(91,86,86,.4);
+}
+
+#sort-tasks-button:disabled {
+	opacity: .3;
+}
+
+#sort-tasks-button:disabled:hover {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	cursor: unset;
+	top: 59px;
+	color: #888;
+}
+
+#delete-all {
+	border: 1px solid #67e68a;
+	border-radius: 5px;
+	background-color: #fff;
+	padding: 3px 6px;
+	position: absolute;
+	font-size: 12px;
+	line-height: 16px;
+	top: 59px;
+	left: 12px;
+	outline: none;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s; 
+	color: #888;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	width: 60px;
+	text-align: center;
+}
+
+#delete-all:hover {
+	color: #000;
+	top: 58px;
+	border: 1px solid #e8686e;
+	cursor: pointer;
+	box-shadow:  0px 0px 3px 1px rgba(91,86,86,.4);
+	-webkit-box-shadow: 0px 0px 3px 1px rgba(91,86,86,.4);
+	-moz-box-shadow:  0px 0px 3px 1px rgba(91,86,86,.4);
+}
+
+#delete-all:active {
+	box-shadow: inset  0px 0px 3px 1px rgba(91,86,86,.4);
+	-webkit-box-shadow: inset 0px 0px 3px 1px rgba(91,86,86,.4);
+	-moz-box-shadow inset:  0px 0px 3px 1px rgba(91,86,86,.4);
+}
+
+#delete-all:disabled {
+	opacity: .3;
+	border: 1px solid #67e68a;
+}
+
+#delete-all:disabled:hover {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	cursor: unset;
+	top: 59px;
+	color: #888;
+}
+
+.header input {
+	width: 240px;
+	height: 30px;
+	border-radius: 3px;
+	border: none;
+	margin-right: 10px;
+	margin-left: 13px;
+	outline: none;
+	padding-left: 10px;
+	padding-right: 10px;
+
+
+	box-shadow: inset 0 1px 1px rgba(91,86,86,.8);
+	-webkit-box-shadow: inset 0 1px 1px rgba(91,86,86,.8);
+	-moz-box-shadow: inset 0 1px 1px rgba(91,86,86,.8);
+}
+
+.header .add-btn {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	border: none;
+	background-color: #fff;
+	position: relative;
+	outline: none;
+	cursor: pointer;
+	-webkit-transition: -webkit-box-shadow .3s;
+	transition: -webkit-box-shadow .3s;
+	-o-transition: box-shadow .3s;
+	transition: box-shadow .3s;
+	transition: box-shadow .3s, -webkit-box-shadow .3s;
+	
+}
+
+.svg { 
+	 width: 20px;
+	 height: 20px;
+	 position:absolute;
+	 top: 50%;
+	 left: 50%;
+	 z-index: 2;
+	 fill: #67e68a;
+	
+	 -webkit-transform: translate(-50%, -50%);
+	 -moz-transition: all .3s;
+	 -ms-transform: translate(-50%, -50%);
+	 transform: translate(-50%, -50%);
+	 
+	 -webkit-transition: all .3s;
+	 -moz-transition: all .3s;
+	 -o-transition: all .3s;
+	 transition: all .3s;
+}
+
+.header .add-btn:hover .svg {
+ 	fill: #1eff5a;
+}
+
+.header .add-btn:active .svg {
+	-webkit-transition: all .1s;
+	-moz-transition: all .3s;
+	-o-transition: all .1s;
+	transition: all .1s;
+	fill: #67e68a;
+}
+
+.header .add-btn:hover {
+	box-shadow:   0px 0px 4px  rgba(1,0,0,.4);
+	-webkit-box-shadow:  0px 0px 7px  rgba(1,0,0,.4);
+	-moz-box-shadow:  0px 0px 5px  rgba(1,0,0,.4);
+}
+
+.header .add-btn:active {
+	box-shadow:  inset 0px 0px 4px  rgba(1,0,0,.4);
+	-webkit-box-shadow: inset 0px 0px 7px  rgba(1,0,0,.4);
+	-moz-box-shadow: inset 0px 0px 5px  rgba(1,0,0,.4);
+}
+
+.conteiner h3 {
+	position: relative;
+	opacity: .4;
+	text-align: center;
+	margin: 10px 0 10px 0;
+}
+
+.conteiner .completed-caption {
+	margin-top: 30px;
+}
+
+.conteiner .completed-caption::before {
+	content: '';
+	display: block;
+	width: 95px;
+	height: 1px;
+	position: absolute;
+	left: 115px;
+	bottom: 0px;
+	background-color: #000;
+	opacity: .4;
+}
+
+.conteiner .uncompleted-caption::before {
+	content: '';
+	display: block;
+	width: 116px;
+	height: 1px;
+	position: absolute;
+	left: 105px;
+	bottom: 0px;
+	background-color: #000;
+	opacity: .4;
+}
+
+.conteiner #completed .item-todo,
+.conteiner #uncompleted .item-todo {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 300px;
+	border: 1px solid #67e68a;
+	border-radius: 3px;
+	margin-left: 12px;
+	margin-bottom: 10px;
+	padding: 10px 15px 10px 15px;
+	color: #373737;
+	background-color: #fff;
+	position: relative;
+	
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.conteiner #completed .item-todo {
+	opacity: .5;
+}
+
+.conteiner #uncompleted .item-todo:hover {
+	box-shadow:  0px 0px 3px 1px rgba(91,86,86,.4);
+	-webkit-box-shadow: 0px 0px 3px 1px rgba(91,86,86,.4);
+	-moz-box-shadow:  0px 0px 3px 1px rgba(91,86,86,.4);
+} 
+
+#completed .item-todo span ,
+#uncompleted .item-todo span {
+	width: 200px; 
+	display: block;
+	word-break: break-all;
+}
+
+#completed .item-todo span {
+	text-decoration: line-through;
+}
+
+.todo .item-todo .buttons {
+	width: 70px;
+	height: 24px;
+	background-color: transparent;
+	margin-left: auto;
+	text-align: center;
+}
+
+.todo .item-todo .buttons .remove,
+.todo .item-todo .buttons .complete {
+	width: 23px;
+	height: 23px;
+	border-radius: 50%;
+	background-color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+#uncompleted .item-todo .buttons .remove .remove-circle {
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+    fill: #fff;
+    stroke: #E63F47;
+    stroke-width: 30px;
+}
+
+#uncompleted .item-todo .buttons .remove svg:hover .remove-circle {
+    fill: #E63F47;
+}
+
+#uncompleted .item-todo .buttons .remove .minus {
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+    fill: #E63F47;
+}
+
+#uncompleted .item-todo .buttons .remove svg:hover .minus {
+    fill:#fff;
+}
+
+#uncompleted  .item-todo .buttons .complete {
+	margin-left: 9px;
+	position: relative;
+}
+
+#uncompleted  .item-todo .buttons .complete .circle {
+ 	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+ 	-o-transition: all .3s;
+ 	transition: all .3s;
+	fill: #fff;
+	stroke: #67e68a;
+	stroke-width: 30;
+} 
+
+#uncompleted  .item-todo .buttons .complete svg:hover .circle {
+	fill: #67e68a;
+} 
+
+#uncompleted  .item-todo .buttons .complete .arrow {
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+	stroke: #67e68a;
+	stroke-width: 30;
+}
+
+
+#uncompleted  .item-todo .buttons .complete svg:hover .arrow {
+	stroke: #fff;
+} 
+
+
+
+#completed .item-todo .buttons .complete {
+	margin-left: 9px;
+	position: relative;
+}
+
+#completed  .item-todo .buttons .complete .circle {
+	fill: #67e68a;
+} 
+
+#completed  .item-todo .buttons .complete .arrow {
+	stroke: #fff;
+	stroke-width: 30;
+}
+
+#completed .item-todo .buttons .remove .remove-circle {
+    fill: #E63F47;
+}
+
+#completed .item-todo .buttons .remove .minus {
+    fill:#fff;
+}
+
+
+
+
+
+#completed .item-todo .buttons .complete::before,
+#uncompleted .item-todo .buttons .complete::before {
+	content: "";
+	width: 1px;
+	height: 23px;
+	background-color: #67e68a;
+	position: absolute;
+	top: 3px;
+	left: 1px;
+}
+
+
+.conteiner #uncompleted:empty::after {
+	content: "You haven't a uncompleted tasks";
+	display: block;
+	width: 100%;
+	color: #aaa;
+	font-size: 12px;
+	text-align: center;
+	top: 0;
+	left: 0;
+
+}
+
+
+.conteiner #inputSearch {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 2px solid rgba(103,230,138,.4);
+    background-color: #f9f7f8;
+	display: block;
+	margin: 0 auto;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 10px;
+	padding-right: 10px;
+	position: relative;
+    transition: all .4s;
+
+/*
+
+	box-shadow: inset 0 1px 1px rgba(91,86,86,.8);
+	-webkit-box-shadow: inset 0 1px 1px rgba(91,86,86,.8);
+	-moz-box-shadow: inset 0 1px 1px rgba(91,86,86,.8);
+*/
+	
+}
+
+#inputSearch:hover {
+   border-color: rgba(103,230,138,1);
+}
+
+.conteiner #inputSearch:focus {
+    width: 240px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    background-color: #fff;
+    
+    
+    box-shadow: inset 0 1px 1px rgba(91,86,86,.8);
+	-webkit-box-shadow: inset 0 1px 1px rgba(91,86,86,.8);
+	-moz-box-shadow: inset 0 1px 1px rgba(91,86,86,.8);
+} 
+
+
+
+.box-search {
+    height: 20px;
+    position: relative;
+}
+
+.box-search span {
+    display: inline-block;
+    width: 2px;
+    height: 14px;
+    bottom: -11px;
+    left: 170px;
+    position: absolute;
+    background-color: rgba(103,230,138,.4);
+    transform-origin: top;
+    transform: rotate(-47deg);
+    transition: all .4s;
+}
+
+.conteiner #inputSearch:hover + span  {
+    background-color: rgba(103,230,138,1);
+}
+
+.conteiner #inputSearch:focus + span {
+   height: 0;
+}
