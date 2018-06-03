@@ -1,5 +1,5 @@
 ### It's my first application.
 
-For  create his I used **HTML**, **CSS** and **JavaScript**.
+For creating this app I used **HTML**, **CSS** and **JavaScript**.
 
-I create his for my practica
+I maked this app for my practica.
